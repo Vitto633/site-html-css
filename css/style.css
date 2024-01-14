@@ -18,11 +18,13 @@ body{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 .logo{
     flex: 20%;
-    text-align: center;
+    text-align: left;
     margin-left: 10%;
 }
 
@@ -48,7 +50,7 @@ body{
 
 .menu a:hover{
     color:#f9af50;
-    border-top: solid 4px #4d376b;
+    border-top: solid 4px #cd86dc;
 }
 
 #btn-nav{
@@ -66,20 +68,130 @@ body{
 }
 
 .header{
+    padding-top: 100px;
     height: 600px;
-    background: gray;
+    background: white;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .headline{
     flex: 40%;
     margin-left: 10%;
-    border: 1px dashed black;
 }
 
+.headline h2{
+    font-weight: bold;
+    font-size: 20px;
+    color: #4d376b;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    text-align: left;
+    color: gray;
+
+}
 .img-headline{
     margin-right: 10%;
     flex: 40%;
-    border: dashed 1px deeppink;
+}
+
+.contact-btn{
+    background-color: #f9af50;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 300ms ease;
+}
+
+.contact-btn:hover{
+    background-color: #cd86dc;
+}
+
+section{
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    text-align: center;
+    padding: 5%;
+    width: 90%;
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'lobster',cursive;
+    font-weight: bold;
+    color: #4d376b;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;    
+}
+
+.card{
+    display: inline-block;
+    padding: 20px;
+    width: 30%;
+    margin: 1%;
+    border: solid 1px #f9af50;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #f9af50;
+    color: white;
+    padding: 40px;
+    transition: 200ms ease;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card:hover .cardText{
+    display: none;
+}
+
+.card:hover .texto-oculto{
+    display: block;
+}
+.texto-oculto{
+    display: none;
+}
+
+footer{
+    margin-top: 100px;
+    height: 300px;
+    background-image: linear-gradient(180deg, #4d376b,#cd86dc);
+    text-align: center;
+}
+
+.logo-rodape{
+    padding: 90px;
+}
+
+.agencia{
+    font-family: 'lobster', cursive;
+    color: white;
+    font-size: 34px;
+}
+
+.contato{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    cursor: pointer;
 }
