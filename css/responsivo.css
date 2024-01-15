@@ -31,7 +31,6 @@
         flex: 100%;
         margin: 5%;
         text-align: center;
-        margin-bottom: 1000px;
     }
 
     .contato{
@@ -41,5 +40,9 @@
     .card{
         width: 100%;
         
+    }
+
+    #textSection{
+        margin-top: 100px;
     }
 }
